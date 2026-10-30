@@ -1,0 +1,27 @@
+{
+  "kind": "local-source-and-isolated-consumer-not-production-qualification",
+  "component": "dpf-business-operations",
+  "sourceRevision": "56f3a5d2d57d751eb3ac435dcca4133c5ff46686",
+  "checkedAt": "2026-10-30T04:52:42.071379+00:00",
+  "platform": "Darwin",
+  "node": "24.16.0",
+  "typescript": "6.0.3",
+  "commands": [
+    {
+      "command": "npm install --ignore-scripts --no-audit --no-fund",
+      "result": "passed"
+    },
+    {
+      "command": "npm run check",
+      "result": "passed"
+    }
+  ],
+  "checkLogSha256": "56fb1a22f32046c524c19c5be3b803101987d60145c660ce45453629954d3720",
+  "limitations": [
+    "Only source identity and the supplied isolated consumer were exercised.",
+    "No application integration, browser/native/OS/company qualification.",
+    "No consumer migration or package release.",
+    "Shared compatibility snapshots retain frozen source ownership until explicit dependency migration."
+  ],
+  "productionConformance": false
+}
